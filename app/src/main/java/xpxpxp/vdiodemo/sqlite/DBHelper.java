@@ -15,12 +15,6 @@ public class DBHelper extends SQLiteOpenHelper {
 
     @Override
     public void onCreate(SQLiteDatabase db) {//创建数据库
-//        db.execSQL("create table tb_outgoods (id varchar(10) primary key,name varchar(200),money varchar(10),many varchar(10),time varchar(10),"
-//                + "type varchar(10),handler varchar(10),mark varchar(200))");// 创建支出信息表
-//        db.execSQL("create table tb_ingoods (id varchar(10) primary key,name varchar(200),money varchar(10),many varchar(10),time varchar(10),"
-//                + "type varchar(10),handler varchar(10),mark varchar(200))");// 创建收入信息表
-//        db.execSQL("create table tb_pwd (account varchar(20) primary key,password varchar(20))");// 创建密码表
-//        db.execSQL("create table tb_flag (id varchar(10) primary key,name varchar(20),time varchar(10),flag varchar(200))");// 创建便签信息表
         //序号，姓名，年龄，登记日期
         db.execSQL("create table ceshi (id varchar(10) primary key, name varchar(200),age varchar(10),date varchar(10))");
     }
